@@ -1,0 +1,97 @@
+.mail {
+  text-align: center;
+}
+
+.mail form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mail input,
+.mail textarea,
+.mail select {
+  width: 100%;
+}
+
+.mail form .form-group {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.mail form .form-group .form-control {
+  display: inline-block;
+  text-align: left;
+  width: auto;
+}
+
+.mail form label {
+  display: block;
+  height: 100%;
+  text-align: left;
+  margin-right: 0.5em;
+}
+
+.mail form button {
+  background-color: #791e94;
+  color: white;
+  margin: 1em 0.5em;
+}
+
+.mail form .form-control {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.mail .mailActions {
+  text-align: left;
+}
+
+.mail .mailActions .form-control {
+  display: flex;
+  margin: 1em 0 0.5em 0.5em;
+}
+
+.mail .mailActions .form-control select {
+  width: 30%;
+  margin-left: 0.5em;
+}
+
+.manageTemplates {
+  text-align: left;
+}
+
+.manageTemplates select {
+  width: 30%;
+  margin-left: 0.5em;
+}
+
+.addTemplate #template {
+  width: 100%;
+}
+
+.ql-container {
+  min-height: 25vh;
+  overflow-y: scroll;
+}
+
+@media only screen and (max-width: 750px) {
+  .mail {
+    text-align: left;
+  }
+
+  .mail form .form-group {
+    flex-direction: column;
+  }
+
+  .mail .mailActions .form-control select {
+    width: 50%;
+  }
+
+  .manageTemplates select {
+    width: 50%;
+  }
+}
